@@ -17,7 +17,7 @@ Above tests were also performed with 10 times repetition. It tests cache systems
 | | All documents | 10000 ID documents | 10 times all documents | 10 times 10000 ID documents |
 | --- | --- | --- | --- | --- |
 | Rod | **0m25.167s** | 0m30.412s | 3m15.944s | 0m36.030s |
-| Rod (cache) | 0m37.801s | 0m35.395s | **3m0.352**s | **0m30.426s** |
+| Rod (cache) | 0m37.801s | 0m35.395s | **3m0.352s** | **0m30.426s** |
 | MongoMapper 0.12 (IdentityMap) | 2m36.715s | 0m14.351s | - | - |
 | MongoMapper 0.13b | 0m51.931s | 0m12.359s | 7m7.040s | 0m48.353s |
 | MongoMapper 0.13b (IdentityMap) | 0m47.529s | 0m8.363s | 7m17.493s | 0m44.588s |
