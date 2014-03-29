@@ -9,7 +9,7 @@ sudo service mongodb restart
 ```
 
 Tests:
-* All documents - retrieve all documents
+* All documents - retrieve all documents (~ million)
 * 10000 ID documents - randomly generated 10000 IDs with the same seed; 9732 IDs were not present in database
 
 Above tests were also performed with 10 times repetition. It tests cache systems and use of disk buffer. 
@@ -22,6 +22,7 @@ Above tests were also performed with 10 times repetition. It tests cache systems
 | MongoMapper 0.13b | 0m51.931s | 0m12.359s | 7m7.040s | 0m48.353s |
 | MongoMapper 0.13b (IdentityMap) | 0m47.529s | 0m8.363s | 7m17.493s | 0m44.588s |
 | Mongo | 0m33.139s | 0m5.793s | 3m57.887s | 0m42.071s |
-| MongoID (Ruby 1.9.3) |  |  |  |  |
+| MongoID (Ruby 1.9.3) | 1m10.046s |  |  |  |
+| MongoID (identity map, Ruby 1.9.3) | 1m46.000s |  |  |  |
 
 Tests should be repeated in Ruby 2.
