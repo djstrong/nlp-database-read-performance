@@ -25,8 +25,12 @@ Above tests were also performed with 10 times repetition. It tests cache systems
 | MongoMapper 0.13b (Ruby 2.1, IdentityMap)| 0m47.085s | 0m9.714s |  | 1m3.656s |
 | Mongo | 0m33.139s | **0m5.793s** | 3m57.887s | 0m42.071s |
 | Mongo (Ruby 2.1) | **0m25.711s** | 0m6.143s | 4m4.164s | 0m36.973s |
-| MongoID (Ruby 1.9.3) | 1m10.046s |  |  |  |
-| MongoID (identity map, Ruby 1.9.3) | 1m46.000s |  |  |  |
-| MongoID (Ruby 2.1) | 0m55.921s | 0m6.906s |  | 0m51.628s |
+| Mongoid (Ruby 1.9.3) | 1m10.046s |  |  |  |
+| Mongoid (identity map, Ruby 1.9.3) | 1m46.000s |  |  |  |
+| Mongoid (Ruby 2.1) | 0m55.921s | 0m6.906s |  | 0m51.628s |
 
-Tests should be measured in code. Dropping disk buffer command is questionable.
+* Tests should be measured in code. 
+* Dropping disk buffer command is questionable.
+* Documents in Mongo are smaller (less fields).
+
+Mongo performance is comparable to Rod. Mongo is better in random access. ORM for Mongo can be worse twice times than Rod.
