@@ -28,6 +28,7 @@ Above tests were also performed with 10 times repetition. It tests cache systems
 | Mongoid (Ruby 1.9.3) | 1m10.046s |  |  |  |
 | Mongoid (identity map, Ruby 1.9.3) | 1m46.000s |  |  |  |
 | Mongoid (Ruby 2.1) | 0m55.921s | 0m6.906s |  | 0m51.628s |
+| Mongoid (identity map, Ruby 2.1) |  |  |  | 0m45.754s |
 
 * Tests should be measured in code. 
 * Dropping disk buffer command is questionable.
