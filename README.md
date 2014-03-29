@@ -10,7 +10,7 @@ sudo service mongodb restart
 
 Tests:
 * All documents - retrieve all documents (~ million)
-* 10000 ID documents - randomly generated 10000 IDs with the same seed; 9732 IDs were not present in database
+* 10000 ID documents - find randomly generated 10000 IDs with the same seed; 9732 IDs were not present in database
 
 Above tests were also performed with 10 times repetition. It tests cache systems and use of disk buffer. 
 
@@ -33,4 +33,4 @@ Above tests were also performed with 10 times repetition. It tests cache systems
 * Dropping disk buffer command is questionable.
 * Documents in Mongo are smaller (less fields).
 
-Mongo performance is comparable to Rod. Mongo is better in random access. ORM for Mongo can be worse twice times than Rod.
+Mongo performance is comparable to Rod. Mongo is better in random access or indexing. ORM for Mongo can be worse twice times than Rod.
