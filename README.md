@@ -30,6 +30,7 @@ Above tests were also performed with 10 times repetition. It tests cache systems
 | Mongoid (identity map, Ruby 2.1) |  |  |  | 0m45.754s |
 
 | | BFS (14000 nodes) |
+| --- | --- |
 | Rod | 2m41.914s |
 | MongoMapper 0.13b | **0m12.941s** |
 
