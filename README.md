@@ -29,6 +29,10 @@ Above tests were also performed with 10 times repetition. It tests cache systems
 | Mongoid (Ruby 2.1) | 0m55.921s | 0m6.906s |  | 0m51.628s |
 | Mongoid (identity map, Ruby 2.1) |  |  |  | 0m45.754s |
 
+| | BFS (14000 nodes) |
+| Rod | 2m41.914s |
+| MongoMapper 0.13b | **0m12.941s** |
+
 * Tests should be measured in code. 
 * Dropping disk buffer command is questionable.
 * Documents in Mongo are smaller (less fields).
